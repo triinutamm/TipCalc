@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical"
+	android:layout_margin="30sp">
+	<TextView
+		android:text="KOGUSUMMA"
+		android:layout_alignParentTop="true"
+		android:layout_centerInParent="true"
+		android:layout_height="wrap_content"
+		android:layout_width="wrap_content"
+		android:textSize="25sp"
+		android:layout_margin="20sp"
+		android:id="@+id/textSum"/>
+	<TextView
+		android:text="0€"
+		android:layout_height="wrap_content"
+		android:layout_width="wrap_content"
+		android:textStyle="bold"
+		android:textSize="60sp"
+		android:layout_below="@id/textSum"
+		android:layout_centerHorizontal="true"
+		android:id="@+id/textSumInt"/>
+
+	<TextView
+		android:text="Arve"
+		android:layout_height="match_parent"
+		android:layout_width="wrap_content"
+		android:textSize="35sp"
+		android:layout_below="@id/textSumInt"
+		android:id="@+id/textBill"/>
+	<EditText
+		android:text=""
+		android:layout_height="match_parent"
+		android:layout_width="wrap_content"
+		android:gravity="right"		
+		android:textSize="40sp"
+		android:layout_alignParentRight="true"
+		android:layout_below="@id/textSumInt"
+		android:layout_toRightOf="@id/textSumInt"
+		android:id="@+id/textBillInt"/>
+	<SeekBar
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+		android:layout_gravity="center"
+		android:layout_centerHorizontal="true"
+		android:layout_alignParentBottom="true"
+		android:layout_margin="30sp"
+		android:id="@+id/sbPercent"/>
+	<TextView
+		android:text="Jootraha tahan jätta 0 %"
+		android:layout_height="wrap_content"
+		android:layout_width="wrap_content"
+		android:textSize="20sp"
+		android:layout_above="@id/sbPercent"
+		android:layout_centerHorizontal="true"
+		android:layout_margin="30sp"
+		android:id="@+id/textTip"/>
+
+
+</RelativeLayout>
